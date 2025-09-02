@@ -18,6 +18,7 @@ sdk_add_compile_definitions(-DLV_LVGL_H_INCLUDE_SIMPLE)
 add_subdirectory(lvgl)
 add_subdirectory(Storage)
 add_subdirectory(lib)
+add_subdirectory(mcp_server)
 
 target_sources(app PRIVATE app_main.c  xiaozhi_api.c )
 

@@ -25,9 +25,9 @@ type = 0
 name = "FW"
 device = 0
 address0 = 0x10000
-size0 = 0x37E000
-address1 = 0x38E000
-size1 = 0x37E000
+size0 = 0x37E700
+address1 = 0x38E700
+size1 = 0x37E700
 # compressed image must set len,normal image can left it to 0
 len = 0
 # If header is 1, it will add the header.
