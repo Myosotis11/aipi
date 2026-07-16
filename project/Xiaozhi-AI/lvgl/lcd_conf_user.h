@@ -28,7 +28,8 @@
     LCD_SPI_ST7789V
     LCD_SPI_ST7735
 */
-#define LCD_SPI_ST7789V
+/* ========== 修改1：屏幕驱动改成 ST7735 ========== */
+#define LCD_SPI_ST7735
 
 
 /* dbi ili9488 config */
@@ -206,7 +207,7 @@
    #define NT35510_DBI_COLOR_REVERSAL 0
 
 
-/* spi st7789v config */
+/* ========== 修改2：ST7735 配置块 - 关键修改都在这 ========== */
 #elif defined LCD_SPI_ST7735
 
     /* Selecting interface type, more configuration of peripherals comes later
@@ -223,11 +224,13 @@
         0: Does not care about lcd hard reset
         1: use gpio to reset the lcd
     */
-    #define LCD_RESET_EN 0
+    /* ====== 修改2a：启用复位（如果你屏幕需要复位信号） ====== */
+    #define LCD_RESET_EN 1
 
     /* LCD width and height */
     #define ST7735_SPI_W 240
-    #define ST7735_SPI_H 320
+    /* ====== 修改2b：高度从320改为280（1.69寸屏是240x280） ====== */
+    #define ST7735_SPI_H 280
 
     /* The offset of the area can be displayed */
     #define ST7735_SPI_OFFSET_X 0
