@@ -60,7 +60,7 @@ void user_cmp_tools_hw_init(void)
         .data_bits = UART_DATA_BITS_8,
         .stop_bits = UART_STOP_BITS_1,
         .parity = UART_PARITY_NONE,
-        .flow_ctrl = UART_FLOW_CTRL_DISABLE,
+        .flow_ctrl = UART_FLOW_CTRL_NONE,
         .tx_fifo_threshold = 7,
         .rx_fifo_threshold = 7,
     };
