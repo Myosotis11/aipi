@@ -19,6 +19,7 @@
 #include "media.h"
 #include "user_mcp_tools.h"
 #include "bflb_gpio.h"
+#include "bflb_uart.h"
 #include "stoge.h"
 #include "log.h"
 #define GPIO_LED_PIN 20
